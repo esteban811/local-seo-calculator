@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { CalculatorInput, ServiceType, PopulationTier, GMBPosition } from '../types/calculator';
 
 interface CalculatorProps {
