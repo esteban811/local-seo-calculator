@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --makarios-green: #4FA941;
+  --makarios-dark: #224432;
+  --makarios-lime: #BAF915;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 2px solid #224432;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder {
+  color: #666666;
+  opacity: 1;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4FA941;
+  box-shadow: 0 0 0 3px rgba(79, 169, 65, 0.1);
+}
+
+input:hover,
+select:hover {
+  border-color: #4FA941;
+}
+
+.btn-primary {
+  background-color: #4FA941;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  background-color: #224432;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+}
+
+.results-card {
+  background: #F5F5F5;
+  border-left: 4px solid #BAF915;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.metric-positive {
+  color: #4FA941;
+}
+
+.metric-negative {
+  color: #dc2626;
+}
+
+.section-header {
+  color: #224432;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
